@@ -3,21 +3,21 @@ import Link from "next/link";
 import { Nav } from "./styles";
 const links = () => (
 	<>
-		<Link href="/">
+		<Link href="/" prefetch>
 			<a>
 				<Nav title="Home">
 					<Icon type="home" />
 				</Nav>
 			</a>
 		</Link>
-		<Link href="/about">
+		<Link href="/about" prefetch>
 			<a>
 				<Nav title="About Me">
 					<Icon type="user" />
 				</Nav>
 			</a>
 		</Link>
-		<Link href="/skills">
+		<Link href="/skills" prefetch>
 			<a>
 				<Nav title="Skills">
 					<Icon type="code" />

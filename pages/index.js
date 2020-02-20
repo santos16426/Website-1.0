@@ -1,7 +1,7 @@
 import Layout from "../components/Layout/";
 import Homepage from "../components/Homepage/";
 const Home = () => (
-	<Layout>
+	<Layout noscroll>
 		<Homepage />
 	</Layout>
 );
