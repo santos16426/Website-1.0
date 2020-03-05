@@ -5,7 +5,7 @@ import Link from "next/link";
 const Logo = () => (
 	<LogoWrapper>
 		<Link href="/">
-			<img src="/images/firebase.png" alt="logo" />
+			<img src="/images/logo-dark.svg" alt="logo" />
 		</Link>
 	</LogoWrapper>
 );

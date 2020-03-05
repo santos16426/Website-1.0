@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import styled, { ThemeProvider } from "styled-components";
+import Reac from "react";
+import { ThemeProvider } from "styled-components";
 import theme from "../Theme";
 import GlobalStyles from "../Global";
 import Sidebar from "../Sidebar";
@@ -9,6 +9,7 @@ import { ContainerFluid } from "../Container";
 import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
+
 Router.onRouteChangeStart = () => {
 	NProgress.start();
 };
@@ -19,13 +20,13 @@ Router.onRouteChangeComplete = () => {
 Router.onRouteChangeError = () => {
 	NProgress.done();
 };
-const Layout = ({ children, hideOverflow, noscroll, style }) => {
+const Layout = ({ bgURL, children, hideOverflow, noscroll, style }) => {
 	return (
 		<ThemeProvider theme={theme}>
 			<React.Fragment>
 				<GlobalStyles />
 				<ContainerFluid>
-					<LayoutWrapper noscroll={noscroll} style={style}>
+					<LayoutWrapper bgURL={bgURL} noscroll={noscroll} style={style}>
 						<Meta />
 						<Head>
 							<title>Billy Joe Santos | Software Engineer</title>

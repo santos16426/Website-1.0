@@ -1,7 +1,12 @@
 import Layout from "../components/Layout/";
+import { ContactWrapper } from "../components/ContactMe/styles";
+import ContactForm from "../components/ContactMe/contact-form";
+
 const Contact = () => (
 	<Layout>
-		<h1>Under Construction</h1>
+		<ContactWrapper bgUrl={"/images/darkbg.jpg"}>
+			<ContactForm />
+		</ContactWrapper>
 	</Layout>
 );
 

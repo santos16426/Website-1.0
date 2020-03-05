@@ -9,9 +9,8 @@ export const TypeWriterWrapper = styled.div`
 		flex-direction: column;
 		justify-content: center;
 	}
-	position: absolute;
-	z-index: 1;
-	text-align: center;
+
+	text-align: left;
 	color: #fff;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 3em;

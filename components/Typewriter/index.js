@@ -1,11 +1,11 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { TypeWriterWrapper } from "./styles";
-const BannerString = () => (
+const BannerString = ({ strings }) => (
 	<TypeWriterWrapper>
 		<Typewriter
 			options={{
-				strings: ["Hi!", "I am Billy Joe", "Software Engineer"],
+				strings,
 				autoStart: true,
 				loop: true
 			}}

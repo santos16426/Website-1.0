@@ -17,12 +17,13 @@ const SidebarWrapper = styled.div`
 	@media screen and (max-width: ${props => props.theme.tablet}) {
 		width: 100%;
 		height: 60px;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 3;
 		min-height: 0;
 		flex-direction: row;
+		box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
 		div {
 			flex-direction: column;
 		}

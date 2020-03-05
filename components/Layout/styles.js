@@ -4,6 +4,7 @@ export const LayoutWrapper = styled.div`
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+
 	height: ${props => (props.noscroll ? "100vh" : "100%")};
 	@media screen and (min-height: 1080px) {
 		height: 100vh;
@@ -23,8 +24,9 @@ export const Content = styled.div`
 	overflow: hidden;
 	margin-left: 60px;
 	margin-top: 0;
+	height: 100vh;
 	@media screen and (max-width: ${props => props.theme.tablet}) {
-		overflow: visible;
+		overflow: hidden;
 		margin-left: 0px;
 		margin-top: 60px;
 	}
