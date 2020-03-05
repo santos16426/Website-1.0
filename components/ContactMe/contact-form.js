@@ -114,7 +114,7 @@ const ContactForm = ({ form }) => {
 						})(
 							<ReCAPTCHA
 								className="custom-recaptcha"
-								sitekey="6LeH4N4UAAAAAIHDZ7IHy8ey4oxYWPvJ1PFm024J"
+								sitekey="6LeH4N4UAAAAAEDy6ulyBxoQRo3amnBB6kk58fNN"
 								ref={e => (captcha = e)}
 							/>
 						)}
