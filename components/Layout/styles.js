@@ -25,6 +25,8 @@ export const Content = styled.div`
 	margin-left: 60px;
 	margin-top: 0;
 	height: 100vh;
+	background: #1a1a1a;
+
 	@media screen and (max-width: ${props => props.theme.tablet}) {
 		overflow: hidden;
 		margin-left: 0px;
