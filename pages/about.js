@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import HoverText from "../components/HoverText";
 import Avatar from "../components/Avatar/";
-import { Wrapper } from "./style";
+import { Wrapper } from "../components/style";
 const AboutMe = () => {
 	return (
 		<Layout>
