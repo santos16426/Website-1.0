@@ -10,7 +10,9 @@ export const AvatarWrapper = styled.div`
 	overflow: hidden;
 	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+	&:hover {
+		animation: float 1s ease-in-out infinite;
+	}
 	img {
 		width: 100%;
 		height: auto;
@@ -24,6 +26,7 @@ export const AvatarWrapper = styled.div`
 			box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
 			transform: translatey(-20px);
 		}
+
 		100% {
 			box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 			transform: translatey(0px);

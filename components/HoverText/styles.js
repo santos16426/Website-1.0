@@ -9,6 +9,9 @@ export const HoverTextWrapper = styled.div`
 		color: white;
 		&.h1 {
 			font-size: 2em;
+			.letter {
+				min-width: 10px;
+			}
 		}
 		&.h2 {
 			font-size: 4em;
