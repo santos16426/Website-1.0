@@ -1,1 +1,0 @@
-{"ast":null,"code":"import styled from \"styled-components\";\nexport const LogoWrapper = styled.div`\n\twidth: 60px;\n\theight: 60px;\n\n  img{\n    width:100%;\n    \n    height:100%;\n  }\n  /* @media screen and (max-width: ${props => props.theme.tablet}) {\n\t\twidt\n\t} */\n`;","map":null,"metadata":{},"sourceType":"module"}

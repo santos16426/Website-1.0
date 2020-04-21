@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Layout from \"../components/Layout/\";\nimport Homepage from \"../components/Homepage/\";\n\nconst Home = () => __jsx(Layout, {\n  noscroll: true,\n  hideOverflow: true\n}, __jsx(Homepage, null));\n\nexport default Home;","map":null,"metadata":{},"sourceType":"module"}
