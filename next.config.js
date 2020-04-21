@@ -7,7 +7,7 @@ module.exports = {
 			"/": { page: "/" },
 			"/about": { page: "/about" },
 			"/contact-me": { page: "/contact-me" },
-			skills: { page: "/skills" },
+			"/skills": { page: "/skills" },
 		};
 	},
 };
