@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport { TableWrapper } from \"./style\";\n\nconst Table = () => __jsx(TableWrapper, null, __jsx(\"h1\", null, \"hello\"));\n\nexport default Table;","map":null,"metadata":{},"sourceType":"module"}
