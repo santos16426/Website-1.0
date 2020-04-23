@@ -14,7 +14,7 @@ const ContactForm = ({ form }) => {
 	const [isFormSubmitting, setFormToSubmitting] = useState(false);
 	const [messageSent, setMessageSent] = useState(false);
 	let { getFieldDecorator } = form;
-	const handleSubmit = e => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 		setFormToSubmitting(true);
 		form.validateFields(async (err, values) => {
@@ -23,7 +23,7 @@ const ContactForm = ({ form }) => {
 					name: values.name,
 					email: values.email,
 					subject: values.subject,
-					message: values.message
+					message: values.message,
 				};
 				let user_id = "user_XnTI7jD0oxjOlZMZCMsid";
 				let service_id = "billy_joe_santos";
@@ -82,12 +82,12 @@ const ContactForm = ({ form }) => {
 				<InputGroupWrapper>
 					<Item className="custom-field">
 						{getFieldDecorator("name", {
-							rules: [{ required: true, message: "Name is required" }]
+							rules: [{ required: true, message: "Name is required" }],
 						})(<TextInput placeholder="Name" />)}
 					</Item>
 					<Item className="custom-field">
 						{getFieldDecorator("email", {
-							rules: [{ required: true, message: "Email is required" }]
+							rules: [{ required: true, message: "Email is required" }],
 						})(<TextInput placeholder="Email" />)}
 					</Item>
 				</InputGroupWrapper>
@@ -98,7 +98,7 @@ const ContactForm = ({ form }) => {
 				</Item>
 				<Item className="custom-field">
 					{getFieldDecorator("message", {
-						rules: [{ required: true, message: "Message is required" }]
+						rules: [{ required: true, message: "Message is required" }],
 					})(<TextArea placeholder="Message" />)}
 				</Item>
 
@@ -108,14 +108,14 @@ const ContactForm = ({ form }) => {
 							rules: [
 								{
 									required: true,
-									message: "Please verify that you are not a robot."
-								}
-							]
+									message: "Please verify that you are not a robot.",
+								},
+							],
 						})(
 							<ReCAPTCHA
 								className="custom-recaptcha"
-								sitekey="6LeH4N4UAAAAAEDy6ulyBxoQRo3amnBB6kk58fNN"
-								ref={e => (captcha = e)}
+								sitekey="6LejFu0UAAAAAPOOEFPL0-5YPF2DwYp1uJDbQ7ln"
+								ref={(e) => (captcha = e)}
 							/>
 						)}
 					</Item>
